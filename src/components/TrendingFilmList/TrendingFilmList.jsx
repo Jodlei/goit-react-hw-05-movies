@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 
 import {
@@ -20,6 +21,10 @@ const TrendingFilmList = ({ trendingFilms }) => {
       ))}
     </TrendingList>
   );
+};
+
+TrendingFilmList.propTypes = {
+  trendingFilms: PropTypes.array.isRequired,
 };
 
 export default TrendingFilmList;
