@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
 
 export const MovieList = styled.ul``;
 export const MovieItem = styled.li`
@@ -7,4 +6,3 @@ export const MovieItem = styled.li`
     margin-bottom: 5px;
   }
 `;
-export const MovieLink = styled(NavLink)``;

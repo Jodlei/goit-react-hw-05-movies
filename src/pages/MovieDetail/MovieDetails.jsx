@@ -1,8 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { Outlet, useParams, useLocation } from 'react-router-dom';
 
 import { getMovieDetails } from '../../components/services/Api';
 import { AdditionalInformation } from '../../components/AdditionalInformation.jsx/AdditionalInformation';
+
+import { NavLink } from 'react-router-dom';
 
 import {
   MovieDetailWrap,
@@ -95,7 +97,8 @@ export const MovieDetails = () => {
           <Text>{genresItems}</Text>
         </DetailsWrap>
       </MovieDetailWrap>
-      <AdditionalInformation />
+
+      <AdditionalInformation state={{ from: location.state?.from }} />
       <Outlet></Outlet>
     </>
   );
