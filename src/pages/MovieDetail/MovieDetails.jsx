@@ -1,10 +1,8 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { Outlet, useParams, useLocation } from 'react-router-dom';
 
 import { getMovieDetails } from '../../components/services/Api';
 import { AdditionalInformation } from '../../components/AdditionalInformation.jsx/AdditionalInformation';
-
-import { NavLink } from 'react-router-dom';
 
 import {
   MovieDetailWrap,
