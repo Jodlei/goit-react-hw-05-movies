@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useLocation, NavLink } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 import { MovieList, MovieItem } from './MovieList.styled';
 
@@ -14,9 +14,9 @@ export const MoviesList = ({ movies }) => {
     <MovieList>
       {movies.map(({ id, title }) => (
         <MovieItem key={id}>
-          <NavLink to={`${id}`} state={{ from: location }}>
+          <Link to={`${id}`} state={{ from: location }}>
             {title}
-          </NavLink>
+          </Link>
         </MovieItem>
       ))}
     </MovieList>

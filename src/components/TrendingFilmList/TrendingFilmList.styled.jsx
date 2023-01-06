@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div``;
 
@@ -11,4 +11,4 @@ export const TrendingItem = styled.li`
   }
 `;
 
-export const TrendingLink = styled(NavLink)``;
+export const TrendingLink = styled(Link)``;
